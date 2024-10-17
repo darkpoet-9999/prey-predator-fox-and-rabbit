@@ -16,7 +16,7 @@
 | `rabbit-hear-distance`   | The distance that the rabbit can hear.                              | 2               |
 | `rabbit-normal-speed`    | The forward movement of a rabbit per tick when searching for food.  | 1               |
 | `rabbit-run-speed`       | The forward movement of a rabbit per tick when running from a fox.  | 5               |
-| `rabbit-step-cost`       | The basal energy cost of a fox per tick.                            | 1               |
+| `rabbit-step-cost`       | The basal energy cost of a rabbit per tick.                            | 1               |
 | `rabbit-gain-from-food`  | The energy gained by a rabbit from eating grass.                    | 5               |
 | `rabbit-reprod-prob`     | The probability of a rabbit to reproduce per tick.                  | 6.00%           |
 | `initial-number-foxes`   | The initial population of foxes.                                    | 100             |
