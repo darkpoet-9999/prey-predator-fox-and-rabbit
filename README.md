@@ -33,7 +33,7 @@
 | `grass-regrowth-time`    | The grass regrowth time.                                            | 15              |
 
 
-### Behavior Overview
+### Behavior Overview:
 
 In this Agent-based model (ABM) implementation, the foxes and rabbits have the ability to see and hear. The rabbits can look around them and find grass at a rabbit-sight-distance and move towards it, however, if no grass can be seen, then it will move forward at a random angle between -44 to +44 angle looking for grass. Rabbits can also hear at a rabbit-hear-distance. If they see or hear a fox, they flee at a rabbit-run-speed until they see/find an unoccupied hiding-hole where they can safely hide from foxes. Inside the hiding hole, they can also reproduce and can stay safely for 5 ticks. Similarly, the fox can see at a fox-sight-distance and hear at a fox-hear-distance to locate rabbits. If no rabbits are detected, they move forward at a fox-normal-speed at a random angle between -44 to +44. Once a rabbit is detected, it chases the rabbit at fox-run-speed. If a rabbit successfully escapes the fox by hiding in a hole, it moves to search for another rabbit. Lastly, in each time step, both foxes and rabbits are able to reproduce based on the percentage set on the fox-reproduce-prob and rabbit-reproduce-prob sliders, respectively.
 
