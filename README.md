@@ -10,26 +10,26 @@
 
 | Slider Setting           | Description                                                         | Default Setting |
 | ------------------------ | ------------------------------------------------------------------- | --------------- |
-| `initial-number-rabbits` | The initial population of rabbits.                                  | 50              |
+| `initial-number-rabbits` | The initial population of rabbits.                                  | 100             |
 | `initial-rabbit-energy`  | The initial energy of the rabbits.                                  | 30              |
 | `rabbit-sight-distance`  | The distance that the rabbit can see.                               | 1               |
 | `rabbit-hear-distance`   | The distance that the rabbit can hear.                              | 2               |
 | `rabbit-normal-speed`    | The forward movement of a rabbit per tick when searching for food.  | 1               |
 | `rabbit-run-speed`       | The forward movement of a rabbit per tick when running from a fox.  | 5               |
-| `rabbit-step-cost`       | The basal energy cost of a rabbit per tick.                            | 1               |
+| `rabbit-step-cost`       | The energy cost of a rabbit per single forward movement.            | 1               |
 | `rabbit-gain-from-food`  | The energy gained by a rabbit from eating grass.                    | 5               |
-| `rabbit-reprod-prob`     | The probability of a rabbit to reproduce per tick.                  | 6.00%           |
+| `rabbit-reprod-prob`     | The probability of a rabbit to reproduce per tick.                  | 10.00%          |
 | `initial-number-foxes`   | The initial population of foxes.                                    | 100             |
 | `initial-fox-energy`     | The initial energy of the foxes.                                    | 30              |
 | `fox-sight-distance`     | The distance that the foxes can see.                                | 2               |
 | `fox-hear-distance`      | The distance that the foxes can hear.                               | 2               |
 | `fox-normal-speed`       | The forward movement of a fox per tick when searching for a rabbit. | 1               |
 | `fox-run-speed`          | The forward movement of a fox per tick when chasing a rabbit.       | 5               |
-| `fox-step-cost`          | The basal energy cost of a fox per tick.                            | 1               |
+| `fox-step-cost`          | The energy gained by a fox from eating a rabbit.                    | 2               |
 | `fox-gain-from-food`     | The energy gained by a fox from eating a rabbit.                    | 10              |
 | `fox-reprod-prob`        | The probability of a fox to reproduce per tick.                     | 1.00%           |
 | `grass-count`            | The number of grass units in the environment.                       | 1500            |
-| `hole-count`             | The number of hiding holes for rabbits.                             | 300             |
+| `hole-count`             | The number of hiding holes for rabbits.                             | 400             |
 | `grass-regrowth-time`    | The grass regrowth time.                                            | 15              |
 
 
