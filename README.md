@@ -6,7 +6,7 @@
   In this asynchronous exercise, we modeled the predator and prey paradigm in complex systems based on the fox-rabbit-grass food chain. In this model, there are three agents: foxes, rabbits, and grass patches. The fox is the predator, the rabbit is the prey and grass is the food source of the rabbit. The Netlogo model has several sliders which can be used to observe various scenarios, as listed below:
 
 
-## Slider Settings
+### Slider Settings
 
 | Slider Setting           | Description                                                         | Default Setting |
 | ------------------------ | ------------------------------------------------------------------- | --------------- |
@@ -33,5 +33,10 @@
 | `grass-regrowth-time`    | The grass regrowth time.                                            | 15              |
 
 
-  In this ABM implementation, the foxes and rabbits are able to see and hear. The rabbits can look around them and find grass at a rabbit-sight-distance and move towards it, however, if no grass can be seen, then it will move forward at a random angle between -44 to +44 angle looking for grass. Rabbits can also hear at a rabbit-hear-distance. If they see or hear a fox, they flee at a rabbit-run-speed until they see/find an unoccupied hiding-hole where they can safely hide from foxes. Inside the hiding hole, they can also reproduce and can stay safely for 5 ticks. Similarly, the fox can see at a fox-sight-distance and hear at a fox-hear-distance to locate rabbits. If no rabbits are detected, they move forward at a fox-normal-speed at a random angle between -44 to +44. Once a rabbit is detected, it chases the rabbit at fox-run-speed. If a rabbit successfully escapes the fox by hiding in a hole, it moves to search for another rabbit. Lastly, in each time step, both foxes and rabbits are able to reproduce based on the percentage set on the fox-reproduce-prob and rabbit-reproduce-prob sliders, respectively.
+### Behavior Overview
 
+In this agent-based model (ABM) implementation, foxes and rabbits have the ability to see and hear their surroundings. Rabbits search for grass within their sight range (`rabbit-sight-distance`) and move towards it. If no grass is visible, they move forward in a random direction, at an angle between -44 to +44 degrees, to locate food. Rabbits can also detect sounds within their hearing range (`rabbit-hear-distance`). If they detect a fox through sight or hearing, they flee at a higher speed (`rabbit-run-speed`) until they find an unoccupied hiding hole where they can stay safely for up to 5 ticks and potentially reproduce.
+
+Similarly, foxes can locate rabbits using their sight (`fox-sight-distance`) and hearing (`fox-hear-distance`). If no rabbits are detected, foxes move at their normal speed (`fox-normal-speed`) in a random direction, within an angle of -44 to +44 degrees. Once a rabbit is detected, the fox pursues it at an increased speed (`fox-run-speed`). If the rabbit successfully escapes into a hiding hole, the fox continues searching for another rabbit.
+
+During each time step, both foxes and rabbits have the potential to reproduce, based on the reproduction probabilities (`fox-reprod-prob` and `rabbit-reprod-prob`) set by the respective sliders.
